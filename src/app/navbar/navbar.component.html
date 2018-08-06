@@ -1,0 +1,10 @@
+ <!--Main Navigation-->
+ <nav id="nav-main">
+  <ul>
+      <li *ngFor="let menu of navMenu">
+          <a [routerLink]="menu.menuUrl" [class.active-link]="activeUrl ==  menu.menuUrl" routerLinkActive="active">{{ menu.menuName }}</a>
+      </li>
+  </ul>
+</nav>
+
+<!--End of Main Navigation-->
